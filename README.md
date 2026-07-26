@@ -1,11 +1,11 @@
 <div align="center">
 
-<a href="./README.md"><img src="https://img.shields.io/badge/语言-简体中文-2563EB?style=for-the-badge" alt="简体中文"></a>
-<a href="./README_EN.md"><img src="https://img.shields.io/badge/Language-English-111827?style=for-the-badge" alt="English"></a>
+<a href="https://github.com/CSQ-AN94/textbook-tutor-skill"><img src="https://img.shields.io/badge/Language-Chinese-111827?style=for-the-badge" alt="Chinese"></a>
+<a href="https://github.com/CSQ-AN94/textbook-tutor-skill/tree/english"><img src="https://img.shields.io/badge/Language-English-2563EB?style=for-the-badge" alt="English"></a>
 
 # 📚 Textbook Tutor
 
-**把复杂知识写成真正能从零读懂的教材。**
+**Turn complex knowledge into a textbook that a true beginner can actually understand.**
 
 An OpenAI Codex skill for creating self-contained, textbook-style tutorials from first principles.
 
@@ -17,20 +17,20 @@ An OpenAI Codex skill for creating self-contained, textbook-style tutorials from
 
 ---
 
-## 它解决什么问题？
+## What problem does it solve?
 
-很多“教程”只是把术语换成项目符号，仍然默认读者已经懂了大量前置知识。
+Many tutorials merely replace jargon with bullet points while still assuming that the reader already understands a long list of hidden prerequisites.
 
-Textbook Tutor 要求 Codex 像一位耐心的教材作者那样写作：
+Textbook Tutor asks Codex to write like a patient textbook author:
 
-- 从第一性原理开始，不隐藏前置知识；
-- 先讲定义和直觉，再进入公式、代码与方法；
-- 用完整算例展示每一个中间步骤；
-- 为每个核心概念提供例子、反例、常见误区和检查题；
-- 用分级练习、答案和综合项目检验真正理解；
-- 默认产出结构完整、可长期阅读的 Markdown 教材。
+- Start from first principles without hiding prerequisites.
+- Explain definitions and intuition before formulas, code, and procedures.
+- Show every intermediate step in worked examples.
+- Give each core concept an example, a non-example, a common misconception, and a checkpoint question.
+- Test real understanding through graded exercises, solutions, and an integrative project.
+- Produce a structured Markdown chapter designed for careful, long-term reading.
 
-## 一分钟安装
+## Install in one minute
 
 ### macOS / Linux
 
@@ -48,69 +48,69 @@ New-Item -ItemType Directory -Force "$HOME\.codex\skills"
 Copy-Item -Recurse textbook-tutor-skill\textbook-tutor "$HOME\.codex\skills\"
 ```
 
-安装后重启 Codex。
+Restart Codex after installation.
 
-## 立即试用
+## Try it
 
-在 Codex 中输入：
+Enter this prompt in Codex:
 
 ```text
-请使用 $textbook-tutor，从零开始写一章线性代数教材。
-假设我只会基本算术，必须包含完整算例、练习答案和一个综合项目。
+Use $textbook-tutor to write a linear algebra chapter from first principles.
+Assume that I only know basic arithmetic. Include complete worked examples,
+solutions to the exercises, and one integrative project.
 ```
 
-也可以直接描述任务，Codex 会在合适时自动调用这个 skill：
+You can also describe the task naturally. Codex will invoke the skill automatically when appropriate:
 
 ```text
 Write a self-contained textbook chapter that teaches graph algorithms
 to a complete beginner, with hand-traced examples, exercises, and a project.
 ```
 
-## 教学方法
+## Teaching method
 
-一篇完整教材通常遵循这条学习路径：
+A complete chapter usually follows this learning path:
 
 ```text
-学习目标
+Learning objectives
    ↓
-零基础前置知识
+Zero-background foundations
    ↓
-全局概念地图
+Big-picture concept map
    ↓
-逐个核心概念
+Core concepts, one at a time
    ↓
-完整推导与算例
+Complete derivations and worked examples
    ↓
-误区和边界情况
+Misconceptions and boundary cases
    ↓
-分级练习与答案
+Graded exercises with solutions
    ↓
-综合项目与评分标准
+Integrative project with a rubric
 ```
 
-对于数学、算法和形式化符号，skill 还会强制执行更严格的标准：
+For mathematics, algorithms, and formal notation, the skill enforces an even stricter standard:
 
-1. 使用任何工具前，先解释它是什么、为什么需要它；
-2. 用小而清晰的数字写出全部计算步骤；
-3. 算法必须在纸面上逐轮运行，并展示数据结构如何变化；
-4. 不使用“显然”“容易看出”“读者应该熟悉”等跳步表达；
-5. 读者应当能从第一页读到最后一页，而不必另找一本书补课。
+1. Explain what each tool is and why it is needed before using it.
+2. Write out every calculation using small, readable numbers.
+3. Hand-trace algorithms one iteration at a time and show how each data structure changes.
+4. Avoid shortcuts such as “obviously,” “it is easy to see,” and “the reader should be familiar with.”
+5. Make the chapter self-contained enough to read from the first page to the last without another textbook.
 
-## 适合这些任务
+## Good use cases
 
-- 从零编写某个主题的完整教程；
-- 为课程设计章节、模块或学习路线；
-- 把论文、代码库或技术概念改写成初学者教材；
-- 制作包含习题、答案、项目和评分标准的学习材料；
-- 用中文教学，同时保留标准英文术语；
-- 解释数学、算法、工程和编程主题中的隐藏前置知识。
+- Write a complete beginner tutorial on a bounded topic.
+- Design a chapter, course module, or learning path.
+- Turn a paper, codebase, or technical idea into beginner-friendly teaching material.
+- Create learning material with exercises, solutions, projects, and evaluation rubrics.
+- Teach in clear language while retaining standard technical terminology.
+- Reveal and teach the hidden prerequisites behind mathematics, algorithms, engineering, and programming.
 
-## 仓库结构
+## Repository structure
 
 ```text
 textbook-tutor-skill/
 ├── README.md
-├── README_EN.md
 ├── LICENSE
 └── textbook-tutor/
     ├── SKILL.md
@@ -121,12 +121,12 @@ textbook-tutor-skill/
         └── zero-background-math.md
 ```
 
-- `SKILL.md`：触发条件与核心工作流程；
-- `lesson-blueprint.md`：完整教材的结构蓝图；
-- `zero-background-math.md`：数学、算法和符号教学的零基础标准；
-- `openai.yaml`：Codex 中展示所需的界面元数据。
+- `SKILL.md`: Triggering conditions and the core workflow.
+- `lesson-blueprint.md`: The structural blueprint for a complete textbook chapter.
+- `zero-background-math.md`: The zero-background standard for mathematics, algorithms, and notation.
+- `openai.yaml`: Interface metadata used by Codex.
 
-## 更新
+## Update
 
 ```bash
 cd textbook-tutor-skill
@@ -134,15 +134,15 @@ git pull
 cp -R textbook-tutor ~/.codex/skills/
 ```
 
-## 参与改进
+## Contributing
 
-欢迎提交 Issue 或 Pull Request。尤其欢迎：
+Issues and pull requests are welcome, especially for:
 
-- 更真实的教材写作测试案例；
-- 对初学者不友好的跳步或术语；
-- 更好的练习、项目和掌握度检查方法；
-- 不同语言和学科中的教学经验。
+- Realistic textbook-writing test cases.
+- Steps or terminology that remain unfriendly to beginners.
+- Better exercises, projects, and mastery checks.
+- Teaching experience from different languages and subject areas.
 
 ## License
 
-⚖️ 本仓库采用 [MIT License](./LICENSE)，并已被 GitHub 原生许可证检测识别。你可以自由使用、修改与分享，但请保留许可证声明。
+⚖️ This repository is available under the [MIT License](./LICENSE), recognized by GitHub's native license detection. You may use, modify, and share it freely while retaining the license notice.
