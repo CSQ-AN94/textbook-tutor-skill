@@ -1,7 +1,7 @@
 <div align="center">
 
-<a href="./README.md"><img src="https://img.shields.io/badge/语言-简体中文-2563EB?style=for-the-badge" alt="简体中文"></a>
-<a href="./README_EN.md"><img src="https://img.shields.io/badge/Language-English-111827?style=for-the-badge" alt="English"></a>
+<a href="https://github.com/CSQ-AN94/textbook-tutor-skill"><img src="https://img.shields.io/badge/语言-简体中文-2563EB?style=for-the-badge" alt="简体中文"></a>
+<a href="https://github.com/CSQ-AN94/textbook-tutor-skill/tree/english"><img src="https://img.shields.io/badge/Language-English-111827?style=for-the-badge" alt="English"></a>
 
 # 📚 Textbook Tutor
 
