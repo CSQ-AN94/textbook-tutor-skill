@@ -1,14 +1,17 @@
 <div align="center">
 
+<a href="./README.md"><img src="https://img.shields.io/badge/语言-简体中文-2563EB?style=for-the-badge" alt="简体中文"></a>
+<a href="./README_EN.md"><img src="https://img.shields.io/badge/Language-English-111827?style=for-the-badge" alt="English"></a>
+
 # 📚 Textbook Tutor
 
 **把复杂知识写成真正能从零读懂的教材。**
 
 An OpenAI Codex skill for creating self-contained, textbook-style tutorials from first principles.
 
-[![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827?style=flat-square)](./textbook-tutor/SKILL.md)
-[![Markdown](https://img.shields.io/badge/Output-Markdown-2563EB?style=flat-square)](https://www.markdownguide.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](./LICENSE)
+[![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827?style=for-the-badge)](./textbook-tutor/SKILL.md)
+[![Markdown](https://img.shields.io/badge/Output-Markdown-2563EB?style=for-the-badge)](https://www.markdownguide.org/)
+[![License](https://img.shields.io/github/license/CSQ-AN94/textbook-tutor-skill?style=for-the-badge&label=%E2%9A%96%EF%B8%8F%20License&color=22C55E)](./LICENSE)
 
 </div>
 
@@ -107,6 +110,7 @@ to a complete beginner, with hand-traced examples, exercises, and a project.
 ```text
 textbook-tutor-skill/
 ├── README.md
+├── README_EN.md
 ├── LICENSE
 └── textbook-tutor/
     ├── SKILL.md
@@ -141,4 +145,4 @@ cp -R textbook-tutor ~/.codex/skills/
 
 ## License
 
-MIT License。你可以自由使用、修改与分享，但请保留许可证声明。
+⚖️ 本仓库采用 [MIT License](./LICENSE)，并已被 GitHub 原生许可证检测识别。你可以自由使用、修改与分享，但请保留许可证声明。
