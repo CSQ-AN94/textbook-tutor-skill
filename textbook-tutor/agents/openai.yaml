@@ -1,0 +1,4 @@
+interface:
+  display_name: "Textbook Tutor"
+  short_description: "Write thorough lessons from first principles"
+  default_prompt: "Use $textbook-tutor to create a Markdown tutorial that teaches me a topic from zero with exercises and a project."
